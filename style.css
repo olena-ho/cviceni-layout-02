@@ -36,6 +36,45 @@ aside > :last-child {
 .hlavicka {
   background-color: #2ecc71;
 }
+
+@media screen and (min-width: 640px) {
+  .kontejner {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 30% 70%;
+  }
+  .menu {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .obsah {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .reklama {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .kontejner {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 60% 20%;
+  }
+  .menu {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .obsah {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .reklama {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+}
 .menu {
   background-color: #e74c3c;
 }
